@@ -1,0 +1,18 @@
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# .idea
+.idea/
+
+.classes/
+
+.target/
+
+*.jar
+*.war
+
+jdbc.properties
