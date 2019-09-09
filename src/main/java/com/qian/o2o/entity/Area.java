@@ -1,4 +1,4 @@
-package java.com.qian.o2o.entity;
+package com.qian.o2o.entity;
 
 import java.util.Date;
 
@@ -9,6 +9,7 @@ public class Area {
 
     private int areaID;
     private String areaName;
+    private int priority;
     private Date createTime;
     private Date updateTime;
 
@@ -26,6 +27,14 @@ public class Area {
 
     public void setAreaName(String areaName) {
         this.areaName = areaName;
+    }
+
+    public int getPriority() {
+        return priority;
+    }
+
+    public void setPriority(int priority) {
+        this.priority = priority;
     }
 
     public Date getCreateTime() {

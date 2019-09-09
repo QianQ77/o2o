@@ -4,7 +4,6 @@ DROP TABLE IF EXISTS `tb_area`;
 create table `tb_area`(
 	`area_id` int NOT NULL AUTO_INCREMENT,
 	`area_name` varchar(200) NOT NULL,
-	`priority` int NOT NULL DEFAULT '0',
 	`create_time` datetime DEFAULT NULL,
 	`last_edit_time` datetime DEFAULT NULL,
 	primary key (`area_id`),

@@ -1,4 +1,4 @@
-package java.com.qian.o2o.entity;
+package com.qian.o2o.entity;
 
 import java.util.Date;
 import java.util.List;
