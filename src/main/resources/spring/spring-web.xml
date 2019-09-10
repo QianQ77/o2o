@@ -23,13 +23,13 @@
         <property name="suffix" value=".html"></property>
     </bean>
     <!-- File Upload resolver -->
-    <bean id="multipartResolver"
-          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <property name="defaultEncoding" value="utf-8"></property>
-        <!-- 1024 * 1024 * 20 = 20M -->
-        <property name="maxUploadSize" value="20971520"></property>
-        <property name="maxInMemorySize" value="20971520"></property>
-    </bean>
+    <!--<bean id="multipartResolver"-->
+          <!--class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
+        <!--<property name="defaultEncoding" value="utf-8"></property>-->
+        <!--&lt;!&ndash; 1024 * 1024 * 20 = 20M &ndash;&gt;-->
+        <!--<property name="maxUploadSize" value="20971520"></property>-->
+        <!--<property name="maxInMemorySize" value="20971520"></property>-->
+    <!--</bean>-->
 
     <!-- 4.Scan Web Related Bean -->
     <context:component-scan base-package="com.qian.o2o.web" />

@@ -11,7 +11,7 @@ public class Area {
     private String areaName;
     private int priority;
     private Date createTime;
-    private Date updateTime;
+    private Date lastEditTime;
 
     public int getAreaID() {
         return areaID;
@@ -45,11 +45,11 @@ public class Area {
         this.createTime = createTime;
     }
 
-    public Date getUpdateTime() {
-        return updateTime;
+    public Date getLastEditTime() {
+        return lastEditTime;
     }
 
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
+    public void setLastEditTime(Date lastEditTime) {
+        this.lastEditTime = lastEditTime;
     }
 }
