@@ -7,18 +7,18 @@ import java.util.Date;
  */
 public class Area {
 
-    private int areaID;
+    private int areaId;
     private String areaName;
     private int priority;
     private Date createTime;
     private Date lastEditTime;
 
-    public int getAreaID() {
-        return areaID;
+    public int getAreaId() {
+        return areaId;
     }
 
-    public void setAreaID(int areaID) {
-        this.areaID = areaID;
+    public void setAreaId(int areaId) {
+        this.areaId = areaId;
     }
 
     public String getAreaName() {
