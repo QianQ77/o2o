@@ -18,6 +18,7 @@ import static org.junit.Assert.assertEquals;
 public class ShopDaoTest extends BaseTest {
     @Autowired
     private ShopDao shopDao;
+
     @Test
     public void testInsertShop() {
         Shop shop = new Shop();
@@ -40,6 +41,17 @@ public class ShopDaoTest extends BaseTest {
         shop.setPriority(1);
         shop.setAdvice("test advice");
         int effectedNum = shopDao.insertShop(shop);
+        assertEquals(1, effectedNum);
+    }
+
+    @Test
+    public void testUpdateShop() {
+        Shop shop = new Shop();
+        shop.setShopId(1L);
+        shop.setShopDesc("update shop");
+        shop.setShopAddr("update addr");
+        shop.setLastEditTime(new Date());
+        int effectedNum = shopDao.updateShop(shop);
         assertEquals(1, effectedNum);
     }
 }
